@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+    --color_dark: hsl(252,30%, 17%);
+    --color_light: hsl(252,30%, 95%);
+    --color_gray: hsl(252,15%, 65%);
+    --color_primary: hsl(252,75%, 60%);
+    --color_secondary: hsl(252,100%, 90%);
+    --color_success: hsl(120,95%, 65%);
+    --color_danger: hsl(0,95%, 65%);
+    --color_dark: hsl(252,30%, 17%);
+    --color_black: hsl(252,30%, 10%);
+
+    --border_radius: 2rem;
+    --card_border_radius: 1rem;
+    --btn_padding: 0.6rem 2rem;
+    --search_padding: 0.6rem 1rem;
+    --card_padding: 1rem;
+    
+}
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+body{
+    font-family: "poppins", sans-serif;
+    color: var(--color_dark);
+    background: var(--color_light);
+    overflow-x: hidden;
+}
+
+/* general styles */
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.profile_photo {
+    width: 2.7rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+img {
+    display: inline-block;
+    width: 100%;
+}
+
+.btn {display: inline-block;
+    padding: var(--btn_padding);
+}
