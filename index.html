@@ -34,109 +34,155 @@
 
     <!-- main body -->
     <main>
-        <!-- Left -->
-        <div class="left">
-            <!-- Profile -->
-            <a class="profile">
-                <div class="profile_picture">
-                    <img src="./images/profile_05.jpg">
-                </div>
-                <div class="handle">
-                    <h4>Attahir Jibril</h4>
-                    <p class="text_muted">@attahiruj</p>
-                </div>
-            </a>
-
-            <!-- Sidebar -->
-            <div class="sidebar">
-                <a class="menu_item">
-                    <i class="uil uil-home"></i><h3>Home</h3>
-                </a>
-                <a class="menu_item">
-                    <i class="uil uil-compass"></i><h3>Explore</h3>
-                </a>
-                <a class="menu_item">
-                    <i class="uil uil-bell"></i><h3>Notification</h3>
-                    <!-- Notification popup -->
-                    <div class="notif_popup">
-                        <div>
-                            <div class="profile_picture">
-                                <img src="./images/profile_06.jpg" >
-                            </div>
-                            <div class="notif_body">
-                                <b>Musa Hassan</b> sent you a message
-                                <small class="text_muted">3 MUNITES AGO</small>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="profile_picture">
-                                <img src="./images/profile_07.jpg" >
-                            </div>
-                            <div class="notif_body">
-                                <b>Gai Takashi</b> sent you a message
-                                <small class="text_muted">46 MUNITES AGO</small>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="profile_picture">
-                                <img src="./images/profile_08.jpg" >
-                            </div>
-                            <div class="notif_body">
-                                <b>Emilia May</b> accepted your friend reques
-                                <small class="text_muted">1 HOURS AGO</small>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="profile_picture">
-                                <img src="./images/profile_03.jpg" >
-                            </div>
-                            <div class="notif_body">
-                                <b>Fatimah Himura</b> accepted your friend request
-                                <small class="text_muted">3 HOURS AGO</small>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="profile_picture">
-                                <img src="./images/profile_11.jpg" >
-                            </div>
-                            <div class="notif_body">
-                                <b>Sakura Haruna</b> sent you photo
-                                <small class="text_muted">3 HOURS AGO</small>
-                            </div>
-                        </div>
+        <div class="container">
+            <!-- Left -->
+            <div class="left">
+                <!-- Profile -->
+                <a class="profile">
+                    <div class="profile_picture">
+                        <img src="./images/profile_05.jpg">
+                    </div>
+                    <div class="handle">
+                        <h4>Attahir Jibril</h4>
+                        <p class="text_muted">@attahiruj</p>
                     </div>
                 </a>
-                <a class="menu_item">
-                    <i class="uil uil-envelope-alt"></i><h3>Messages</h3>
-                </a>
-                <a class="menu_item">
-                    <i class="uil uil-bookmark"></i><h3>Bookmarks</h3>
-                </a>
-                <a class="menu_item">
-                    <i class="uil uil-chart-line"></i><h3>Analytics</h3>
-                </a>
-                <a class="menu_item">
-                    <i class="uil uil-palette"></i><h3>Themes</h3>
-                </a>
-                <a class="menu_item">
-                    <i class="uil uil-setting"></i><h3>Settings</h3>
-                </a>
+
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    <a class="menu_item active">
+                        <i class="uil uil-home"></i><h3>Home</h3>
+                    </a>
+                    <a class="menu_item">
+                        <i class="uil uil-compass"></i><h3>Explore</h3>
+                    </a>
+                    <a class="menu_item" id="msg_notif">
+                        <i class="uil uil-bell"><small class="notif_count">9+</small></i><h3>Notification</h3>
+                        <!-- Notification popup -->
+                        <div class="notif_popup">
+                            <div>
+                                <div class="profile_picture">
+                                    <img src="./images/profile_06.jpg" >
+                                </div>
+                                <div class="notif_body">
+                                    <b>Musa Hassan</b> sent you a message
+                                    <small class="text_muted">3 MUNITES AGO</small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="profile_picture">
+                                    <img src="./images/profile_07.jpg" >
+                                </div>
+                                <div class="notif_body">
+                                    <b>Gai Takashi</b> sent you a message
+                                    <small class="text_muted">46 MUNITES AGO</small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="profile_picture">
+                                    <img src="./images/profile_08.jpg" >
+                                </div>
+                                <div class="notif_body">
+                                    <b>Emilia May</b> accepted your friend reques
+                                    <small class="text_muted">1 HOURS AGO</small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="profile_picture">
+                                    <img src="./images/profile_03.jpg" >
+                                </div>
+                                <div class="notif_body">
+                                    <b>Fatimah Himura</b> commented on your post
+                                    <small class="text_muted">3 HOURS AGO</small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="profile_picture">
+                                    <img src="./images/profile_11.jpg" >
+                                </div>
+                                <div class="notif_body">
+                                    <b>Sakura Haruna</b> sent you photo
+                                    <small class="text_muted">3 HOURS AGO</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="menu_item" id="msg_notif">
+                        <i class="uil uil-envelope-alt"><small class="notif_count">6</small></i><h3>Messages</h3>
+                    </a>
+                    <a class="menu_item">
+                        <i class="uil uil-bookmark"></i><h3>Bookmarks</h3>
+                    </a>
+                    <a class="menu_item">
+                        <i class="uil uil-chart-line"></i><h3>Analytics</h3>
+                    </a>
+                    <a class="menu_item">
+                        <i class="uil uil-palette"></i><h3>Themes</h3>
+                    </a>
+                    <a class="menu_item">
+                        <i class="uil uil-setting"></i><h3>Settings</h3>
+                    </a>
+                </div>
+                <label for="create_post" class="btn btn_primary">Create Post</label>
+
             </div>
 
-        </div>
+            <!-- Middle -->
+            <div class="middle">
+                <!-- Stories -->
+                <div class="stories">
+                    <div class="story">
+                        <div class="profile_picture">
+                            <img src="./images/profile_05.jpg" alt="">
+                        </div>
+                        <p class="name">Your Story</p>
+                    </div>
 
-        <!-- Middle -->
-        <div class="middle">
+                    <div class="story">
+                        <div class="profile_picture">
+                            <img src="./images/profile_04.jpg" alt="">
+                        </div>
+                        <p class="name">David Brown</p>
+                    </div>
 
-        </div>
+                    <div class="story">
+                        <div class="profile_picture">
+                            <img src="./images/profile_03.jpg" alt="">
+                        </div>
+                        <p class="name">Anna faye</p>
+                    </div>
 
-        <!-- Right -->
-        <div class="right">
+                    <div class="story">
+                        <div class="profile_picture">
+                            <img src="./images/profile_08.jpg" alt="">
+                        </div>
+                        <p class="name">Halimah Don</p>
+                    </div>
 
+                    <div class="story">
+                        <div class="profile_picture">
+                            <img src="./images/profile_10.jpg" alt="">
+                        </div>
+                        <p class="name">Guy Forgets</p>
+                    </div>
+                </div>
+                <!-- Create post -->
+                <form class="create_post">
+                    <div class="profile_picture">
+                        <img src="./images/feed_05.jpg" >
+                    </div>
+                    <input type="text" placeholder="Whats on yor mind, Attahiru?" id="create_post">
+                    <input type="submit" class="btn btn_primary">
+                </form>
+            </div>
+
+            <!-- Right -->
+            <div class="right">
+            </div>
         </div>
     </main>
     
