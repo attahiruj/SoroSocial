@@ -540,3 +540,149 @@ main .container .right {
     display: flex;
     gap: 1rem;
 }
+
+
+/* ========================== Custom theme ============================ */
+.custom_theme {
+    background: rgba(255, 255, 255, 0.5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+.custom_theme .card {
+    background: var(--color_white);
+    padding: 3rem;
+    border-radius: var(--card_border_radius);
+    width: 50%;
+}
+
+/* ========================== Theme Font size ============================ */
+.custom_theme .font_size {
+    margin-top: 5rem;
+}
+
+.custom_theme .font_size > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color_light);
+    padding: var(--search_padding);
+    border-radius: var(--card_border_radius);
+}
+
+.custom_theme .choose_size {
+    background: var(--color_secondary);
+    height: 0.3rem;
+    width: 100%;
+    margin: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.custom_theme .choose_size span {
+    width: 1rem;
+    height: 1rem;
+    background: var(--color_secondary);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.custom_theme .choose_size span.active{
+    background: var(--color_primary);
+}
+
+/* ========================== Theme color ============================ */
+.custom_theme .color {
+    margin-top: 2rem;
+}
+
+.custom_theme .choose_color {
+    background: var(--color_light);
+    padding: var(--card_padding);
+    border-radius: var(--card_border_radius);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.custom_theme .choose_color span {
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+}
+
+.custom_theme .choose_color span:nth-child(1) {
+    background: hsl(252,75%, 60%);
+}
+.custom_theme .choose_color span:nth-child(2) {
+    background: hsl(52,75%, 60%);
+}
+.custom_theme .choose_color span:nth-child(3) {
+    background: hsl(352,75%, 60%);
+}
+.custom_theme .choose_color span:nth-child(4) {
+    background: hsl(152,75%, 60%);
+}
+.custom_theme .choose_color span:nth-child(5) {
+    background: hsl(22,75%, 60%);
+}
+
+.custom_theme .choose_color span.active {
+    border: 5px solid white;
+}
+
+/* ========================== Theme Background ============================ */
+.custom_theme .background {
+    margin-top: 2rem;
+}
+
+.custom_theme .choose_bg {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.custom_theme .choose_bg > div {
+    padding: var(--card_padding);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+.custom_theme .choose_bg > div.active {
+    border: 2px solid var(--color_primary);
+}
+
+.custom_theme .choose_bg .bg_1 {
+    background: white;
+    color: black;
+}
+.custom_theme .choose_bg .bg_2 {
+    background: hsl(252, 30%, 17%);
+    color: white;
+}
+.custom_theme .choose_bg .bg_3 {
+    background: hsl(252, 30%, 10%);
+    color: white;
+}
+
+.custom_theme .choose_bg > div span {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 2px solid var(--color_gray);
+    margin-right: 1rem;
+}
