@@ -516,5 +516,27 @@ main .container .right {
 }
 
 .right .friend_requests{
-    
+    margin-top: 1rem;
+}
+
+.right .friend_requests h4 {
+    color: var(--color_gray);
+    margin: 1rem 0;
+}
+
+.right .request {
+    background: var(--color_white);
+    padding: var(--card_padding);
+    border-radius: var(--card_border_radius);
+    margin-bottom: 0.7rem;
+}
+
+.right .request .info {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.right .request .action {
+    display: flex;
+    gap: 1rem;
 }
