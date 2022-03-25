@@ -781,6 +781,7 @@ main .container .right {
         position: fixed;
         bottom: 0;
         right: 0;
+        margin-top: 20vh;
     }
 
     main .container .left .profile {
@@ -833,7 +834,6 @@ main .container .right {
     }
 
     .left .notif_popup {
-        /* display: none; */
         left: -500%;
     }
 
