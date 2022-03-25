@@ -833,7 +833,8 @@ main .container .right {
     }
 
     .left .notif_popup {
-        display: none;
+        /* display: none; */
+        left: -500%;
     }
 
     .custom_theme h2 {
