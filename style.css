@@ -2,15 +2,20 @@
 
 :root {
     --color_primary_hue: 252;
+    --dark_color_lightness: 17%;
+    --light_color_lightness: 95%;
+    --white_color_lightness: 100%;
+
+
     --color_dark: hsl(252,30%, 17%);
-    --color_light: hsl(252,30%, 95%);
-    --color_white: rgb(255, 255, 255);
+    --color_light: hsl(252,30%, var(--light_color_lightness));
+    --color_white: hsl(252, 30%, var(--white_color_lightness));
     --color_gray: hsl(252,15%, 65%);
     --color_primary: hsl(var(--color_primary_hue),75%, 60%);
     --color_secondary: hsl(252,100%, 90%);
     --color_success: hsl(120,95%, 65%);
     --color_danger: hsl(0,95%, 65%);
-    --color_dark: hsl(252,30%, 17%);
+    --color_dark: hsl(252,30%, var(--dark_color_lightness));
     --color_black: hsl(252,30%, 10%);
 
     --border_radius: 2rem;
@@ -815,26 +820,22 @@ main .container .right {
         box-shadow: 0px 0.5px 20px var(--color_primary);
     }
 
-    nav .container {
-        direction: rtl;
-        display: inline-flex;
-    }
+
 
     nav .create .btn{
         display: none;
     }
 
     nav .container .profile_picture {
-        margin-left: 1rem;
+        margin-right: 1rem;
     }
 
     nav .container .log {
-        align-self: center;
-        margin-right: 30%;
+        margin-left: 1rem;
     }
 
     .left .notif_popup {
-        left: -500%;
+        left: -450%;
     }
 
     .custom_theme .card {

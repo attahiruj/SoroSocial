@@ -12,6 +12,10 @@ const fontSize = document.querySelectorAll('.choose_size span');
 var root = document.querySelector(':root');
 const colorPalette = document.querySelectorAll('.choose_color span');
 
+const bg1 = document.querySelector('.bg_1');
+const bg2 = document.querySelector('.bg_2');
+const bg3 = document.querySelector('.bg_3');
+
 //remove active class from all menu items
 const changeActiveItem = () => {
     menuItems.forEach(item => {
@@ -166,4 +170,51 @@ colorPalette.forEach(color => {
 
         root.style.setProperty('--color_primary_hue', primaryHue);
     })
+})
+
+//them background variables
+let lightColorLightness;
+let whiteColorLightness;
+let darkColorLightness;
+
+const changeBg = () => {
+    root.style.setProperty('--light_color_lightness', lightColorLightness);
+    root.style.setProperty('--white_color_lightness', whiteColorLightness);
+    root.style.setProperty('--dark_color_lightness', darkColorLightness);
+}
+
+bg1.addEventListener('click', () => {
+
+    //add and remove active class
+    bg1.classList.add('active');
+    bg1.classList.remove('active');
+    bg2.classList.remove('active');
+    // remove customised changes from local storage.
+    window.location.reload();
+})
+
+bg2.addEventListener('click', () => {
+    darkColorLightness = '95%';
+    whiteColorLightness = '20%'
+    lightColorLightness = '15%';
+
+    //add and remove active class
+    bg2.classList.add('active');
+    bg1.classList.remove('active');
+    bg3.classList.remove('active');
+
+    changeBg();
+})
+
+bg3.addEventListener('click', () => {
+    darkColorLightness = '95%';
+    whiteColorLightness = '10%'
+    lightColorLightness = '0%';
+
+    //add and remove active class
+    bg3.classList.add('active');
+    bg1.classList.remove('active');
+    bg2.classList.remove('active');
+
+    changeBg();
 })
