@@ -37,7 +37,7 @@ menuItems.forEach(item => {
 const searchMessage = () => {
     const val = messageSearch.value.toLowerCase();
     message.forEach(user => {
-        let name = user.querySelectorAll('h5').textContent.toLowerCase();
+        let name = user.querySelector('h5').textContent.toLowerCase();
         if(name.indexOf(val) != -1){
             user.style.display = 'flex';
         } else{
