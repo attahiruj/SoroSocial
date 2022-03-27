@@ -117,15 +117,15 @@ fontSize.forEach(size => {
             root.style.setProperty('--sticky_top_right', '-7rem');
         } else if(size.classList.contains('font_size_3')){
             fontSize = '16px';
-            root.style.setProperty('--sticky_top_left', '-2rem');
+            root.style.setProperty('--sticky_top_left', '5.4rem');
             root.style.setProperty('--sticky_top_right', '-17rem');
         } else if(size.classList.contains('font_size_4')){
             fontSize = '19px';
-            root.style.setProperty('--sticky_top_left', '-5rem');
+            root.style.setProperty('--sticky_top_left', '5.4rem');
             root.style.setProperty('--sticky_top_right', '-25rem');
         } else if(size.classList.contains('font_size_5')){
             fontSize = '22px';
-            root.style.setProperty('--sticky_top_left', '-12rem');
+            root.style.setProperty('--sticky_top_left', '5.4rem');
             root.style.setProperty('--sticky_top_right', '-35rem');
         } 
     
