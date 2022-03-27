@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 :root {
+    --color_primary_hue: 252;
     --color_dark: hsl(252,30%, 17%);
     --color_light: hsl(252,30%, 95%);
     --color_white: rgb(255, 255, 255);
     --color_gray: hsl(252,15%, 65%);
-    --color_primary: hsl(252,75%, 60%);
+    --color_primary: hsl(var(--color_primary_hue),75%, 60%);
     --color_secondary: hsl(252,100%, 90%);
     --color_success: hsl(120,95%, 65%);
     --color_danger: hsl(0,95%, 65%);
@@ -635,6 +636,7 @@ main .container .right {
     width: 2.2rem;
     height: 2.2rem;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .custom_theme .choose_color span:nth-child(1) {
@@ -759,13 +761,8 @@ main .container .right {
         font-size: small;
     }
 
-    .custom_theme .choose_bg > div {
-        padding: 0.5rem;
-    }
-
-    .custom_theme .choose_bg > div span {
-        width: 1rem;
-        height: 1rem;
+    .custom_theme .card {
+        width: 80%;
     }
     
 }
