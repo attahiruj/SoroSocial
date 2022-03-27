@@ -3,6 +3,8 @@ const menuItems = document.querySelectorAll('.menu_item');
 // Messages
 const msgNotification = document.querySelector('#msg_notif');
 const messages = document.querySelector('.messages');
+const message = messages.querySelectorAll('.message');
+const messageSearch = document.querySelector('#message_search');
 
 //remove active class from all menu items
 const changeActiveItem = () => {
@@ -30,6 +32,25 @@ menuItems.forEach(item => {
 })
 
 //messages
+
+//search for chats by name
+const searchMessage = () => {
+    const val = messageSearch.value.toLowerCase();
+    message.forEach(user => {
+        let name = user.querySelectorAll('h5').textContent.toLowerCase();
+        if(name.indexOf(val) != -1){
+            user.style.display = 'flex';
+        } else{
+            user.style.display = 'none';
+        }
+    })
+}
+
+// search chat
+messageSearch.addEventListener('keyup', searchMessage);
+
+
+//highlight message box when message is clicked
 msgNotification.addEventListener('click', () => {
     //sets box shadow when msg icon is clicked
     messages.style.boxShadow = '0 0 1rem var(--color_primary)';
